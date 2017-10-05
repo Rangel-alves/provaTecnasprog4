@@ -5,6 +5,7 @@ package br.edu.univas.si4.telaprova;
 	import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.Insets;
 
 import javax.swing.JButton;
 	import javax.swing.JFrame;
@@ -91,9 +92,7 @@ import javax.swing.JTextField;
 			
 			Panel2= new JPanel();
 			
-			Panel2.setLayout(new BorderLayout());
-			this.setContentPane(Panel);
-			
+					
 			Panel2 = new JPanel();
 			Panel2.setBackground(Color.WHITE);
 			Panel2.setPreferredSize(new Dimension(150,200));
@@ -116,6 +115,11 @@ import javax.swing.JTextField;
 			JTextField textEmail = new JTextField();
 			textEmail.setPreferredSize(new Dimension(200,20));
 			Panel2.add(textEmail);
+			
+			JButton salvar =  new JButton();
+			salvar.setText("salvar");
+			salvar.setPreferredSize(new Dimension(100, 200));
+			Panel2.add(salvar);
 			
 			
 		}
